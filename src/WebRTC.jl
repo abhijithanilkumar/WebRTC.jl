@@ -2,9 +2,13 @@ module WebRTC
 
 # package code goes here
 
-export WebRTCApplication
+export WebRTCApplication, WebRTCTextApplication
 
 type WebRTCApplication
+  divid
+end
+
+type WebRTCTextApplication
   divid
 end
 
@@ -17,6 +21,6 @@ include("rtcpeerconnection.jl")
 include("conference.jl")
 include("firebase.jl")
 include("getmediaelement.jl")
-
+include("jquery.jl")
 
 end # module
